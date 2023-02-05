@@ -18,7 +18,8 @@ public class Bicycle extends TwoWheeler{
     }
 
     public static void main(String[] args) {
-        TwoWheeler obj = new Bicycle("B001", "Mountain-Bicycle", 2, 200, true);
+
+        TwoWheeler obj = new Bicycle(args[0], args[1], Integer.parseInt(args[2]), Float.parseFloat(args[3]), Boolean.parseBoolean(args[4]));
         obj.printDetails();
     }
 
